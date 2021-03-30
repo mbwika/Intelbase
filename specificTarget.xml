@@ -1,0 +1,21 @@
+<?xml version="1.0"?><!-- iReport connections -->
+<iReportConnectionSet>
+	<iReportConnection name="allTargets" connectionClass="com.jaspersoft.ireport.designer.connection.JDBCConnection">
+		<connectionParameter name="Username"><![CDATA[root]]></connectionParameter>
+		<connectionParameter name="SavePassword"><![CDATA[true]]></connectionParameter>
+		<connectionParameter name="Database"><![CDATA[]]></connectionParameter>
+		<connectionParameter name="ServerAddress"><![CDATA[]]></connectionParameter>
+		<connectionParameter name="JDBCDriver"><![CDATA[com.mysql.jdbc.Driver]]></connectionParameter>
+		<connectionParameter name="Url"><![CDATA[jdbc:mysql://localhost/inteldb]]></connectionParameter>
+		<connectionParameter name="Password"><![CDATA[6337]]></connectionParameter>
+	</iReportConnection>
+	<iReportConnection name="specificTarget" connectionClass="com.jaspersoft.ireport.designer.connection.JDBCConnection">
+		<connectionParameter name="Username"><![CDATA[root]]></connectionParameter>
+		<connectionParameter name="SavePassword"><![CDATA[true]]></connectionParameter>
+		<connectionParameter name="Database"><![CDATA[]]></connectionParameter>
+		<connectionParameter name="ServerAddress"><![CDATA[]]></connectionParameter>
+		<connectionParameter name="JDBCDriver"><![CDATA[com.mysql.jdbc.Driver]]></connectionParameter>
+		<connectionParameter name="Url"><![CDATA[jdbc:mysql://localhost/inteldb]]></connectionParameter>
+		<connectionParameter name="Password"><![CDATA[6337]]></connectionParameter>
+	</iReportConnection>
+</iReportConnectionSet>

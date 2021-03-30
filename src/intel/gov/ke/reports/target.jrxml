@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ce994e00-0639-4c40-8f26-592fa7c4a527">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM targets WHERE id_number='{idno}';]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="system_gen_num" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="firstname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="middlename" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="surname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dob" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="work_places" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="job_titles" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="academic_institutions" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="academic_qualifications" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="height" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="skin_colour" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="profile" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dna" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fingerprint" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="blood_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="medical_records" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="driving_license_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="service_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="criminal_records" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="religion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="home_place" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="resident_place" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="facial_img" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="attach_1" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="attach_2" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="attach_3" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="attach_4" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="79" height="79" uuid="bfc60a59-786d-4ce3-b5b3-136fc01ada67"/>
+				<imageExpression><![CDATA["C:\\Users\\Collins Mbwika\\Documents\\NetBeansProjects\\Intelbase\\src\\intel\\gov\\ke\\images\\NIS.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="495" y="0" width="60" height="79" uuid="149316da-ac5a-4dd7-8c5a-ec75f20fcb1f"/>
+				<imageExpression><![CDATA["C:\\Users\\Collins Mbwika\\Documents\\NetBeansProjects\\Intelbase\\src\\intel\\gov\\ke\\images\\otp.jpeg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="79" y="0" width="401" height="35" uuid="77ebc233-4a7d-4ddb-a88f-4256e4474e3d"/>
+				<textElement>
+					<font fontName="Stencil Std" size="22"/>
+				</textElement>
+				<text><![CDATA[NATIONAL INTELLIGENCE SERVICE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="91" y="56" width="375" height="23" uuid="159c1fd9-9511-453c-8de2-4ee1813636f9"/>
+				<textElement>
+					<font fontName="Stencil Std" size="18"/>
+				</textElement>
+				<text><![CDATA[DEPARTMENT OF HOMELAND SECURITY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="256" y="33" width="47" height="23" uuid="49423d45-1007-4ba1-92de-beb036dbc3bb"/>
+				<textElement>
+					<font fontName="Stencil Std" size="18"/>
+				</textElement>
+				<text><![CDATA[(NIS)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="303" y="26" width="97" height="20" uuid="a215d411-830f-4c90-8a75-885ebd164d95"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tel. 0203299000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="0" width="228" height="20" uuid="151570d1-6c0f-4a69-abb8-9a0f2ba74612"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.O. Box 30091-00100 NAIROBI, KENYA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField pattern="EEE, d MMM yyyy HH:mm:ss Z">
+				<reportElement x="389" y="0" width="166" height="20" uuid="c1febfaf-9ecf-440a-b04d-c548c27e6709"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="203" y="30" width="147" height="20" uuid="b8468caa-ad33-4295-88f1-644f09063c4f">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Stencil Std" size="16"/>
+				</textElement>
+				<text><![CDATA[TARGET DETAILS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="50" width="555" height="1" uuid="55ae050a-8059-4c22-8c8e-080828b8832a"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="482" splitType="Stretch">
+			<textField>
+				<reportElement x="195" y="43" width="100" height="20" uuid="282aee99-b532-465d-b16c-9711e79d50e6"/>
+				<textFieldExpression><![CDATA[$F{id_number}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="195" y="10" width="100" height="20" uuid="e07b5b46-cf64-478b-8276-73bfe5c80e4d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_number]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="336" y="43" width="100" height="20" uuid="683e6c2e-8988-425f-acad-82b751a8b6fd"/>
+				<textFieldExpression><![CDATA[$F{firstname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="336" y="10" width="100" height="20" uuid="8405a922-c60e-4d78-a337-d584da85b54c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[firstname]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="43" width="100" height="20" uuid="a43e1354-a763-4e47-b71b-b4a9f6ebdbe7"/>
+				<textFieldExpression><![CDATA[$F{surname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="455" y="10" width="100" height="20" uuid="e5743364-3937-49b2-838f-4b14ee0d5988"/>
+				<text><![CDATA[surname]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="436" y="18" width="80" height="20" uuid="31be8950-6593-4e67-9570-8f4905ae3ff1"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="516" y="18" width="40" height="20" uuid="d37f11da-1961-4edf-9944-1af4662bf12a"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

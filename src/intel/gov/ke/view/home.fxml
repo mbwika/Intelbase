@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="AnchorPane" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="intel.gov.ke.view.HomeController">
+   <top>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="406.0" fitWidth="609.0" layoutX="-5.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/background.jpg" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label fx:id="IntelTitle" layoutX="52.0" prefHeight="81.0" prefWidth="500.0" text="Intelligence System" textAlignment="CENTER">
+               <font>
+                  <Font name="Modern No. 20" size="62.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Glow>
+                           <input>
+                              <Shadow />
+                           </input>
+                        </Glow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                     <contentInput>
+                        <DropShadow />
+                     </contentInput>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="0.7388888888888889" radius="0.5">
+                     <stops>
+                        <Stop color="#ebe5e5" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Hyperlink fx:id="copyrightStatement" layoutX="68.0" layoutY="349.0" text="Copyright (c) 2017. The Kenya Intelligence. All rights reserved.">
+               <font>
+                  <Font name="Modern No. 20" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Glow>
+                           <input>
+                              <Shadow />
+                           </input>
+                        </Glow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="0.7388888888888889" radius="0.5">
+                     <stops>
+                        <Stop color="#ebe5e5" />
+                        <Stop color="#807777" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Hyperlink>
+            <ImageView fitHeight="117.0" fitWidth="98.0" layoutX="254.0" layoutY="70.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ProgressIndicator fx:id="progressIndicator" layoutX="267.0" layoutY="214.0" prefHeight="79.0" prefWidth="71.0">
+               <effect>
+                  <DropShadow>
+                     <input>
+                        <InnerShadow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </ProgressIndicator>
+         </children>
+         <effect>
+            <DropShadow>
+               <input>
+                  <InnerShadow />
+               </input>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+   </top>
+</BorderPane>

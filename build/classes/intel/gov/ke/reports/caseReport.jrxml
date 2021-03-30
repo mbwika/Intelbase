@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CASE REPORT" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="96ce91d1-782a-43d8-9ae0-984d93d8fa5b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="106"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="caseReportDataSet" uuid="d9183735-47eb-4b67-9622-943c9072d0ea">
+		<queryString language="SQL">
+			<![CDATA[SELECT * FROM crimes WHERE OBno="$F{OBno}";]]>
+		</queryString>
+		<field name="OBno" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="crime" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="victim_fname" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="victim_sname" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="victim_idno" class="java.lang.Long">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="victim_contacts" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="scene_of_crime" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="time_of_crime" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="witnesses" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="incident_description" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="perpetrator_description" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="surrounding_description" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="suspects" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="date" class="java.sql.Date">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="victim_cellphone_no" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="victim_gender" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="perpetrator_fname" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="perpetrator_sname" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<group name="OBno">
+			<groupExpression><![CDATA[$F{OBno}]]></groupExpression>
+		</group>
+		<group name="crime">
+			<groupExpression><![CDATA[$F{crime}]]></groupExpression>
+		</group>
+		<group name="victim_fname">
+			<groupExpression><![CDATA[$F{victim_fname}]]></groupExpression>
+		</group>
+		<group name="victim_sname">
+			<groupExpression><![CDATA[$F{victim_sname}]]></groupExpression>
+		</group>
+	</subDataset>
+	<parameter name="OBno" class="java.lang.Object">
+		<defaultValueExpression><![CDATA[$F{OBno}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM crimes WHERE OBno="{OBno}";]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="OBno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="crime" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="victim_fname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="victim_sname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="victim_idno" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="victim_contacts" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="scene_of_crime" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="time_of_crime" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="witnesses" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="incident_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="perpetrator_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="surrounding_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="suspects" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="property_info" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="other_related_info" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="attach_1" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="attach_2" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="victim_cellphone_no" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="victim_gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="perpetrator_fname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="perpetrator_sname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<filterExpression><![CDATA[$F{OBno}]]></filterExpression>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="170" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="555" height="79" uuid="cf8c2bbe-99a9-4f36-9750-d0c4a3a3acfe"/>
+				<imageExpression><![CDATA["C:\\Users\\Collins Mbwika\\Documents\\NetBeansProjects\\Intelbase\\src\\intel\\gov\\ke\\images\\s5_logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="27" y="79" width="528" height="35" uuid="a8b64430-f24e-4591-ba62-db1016bcfd51"/>
+				<textElement>
+					<font fontName="Stencil Std" size="22"/>
+				</textElement>
+				<text><![CDATA[DIRECTORATE OF CRIMINAL INVESTIGATIONS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="381" y="125" width="161" height="20" uuid="46341c9e-33c8-4219-987a-69ce5dabdd5a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.O. Box 30036-00100 GPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="145" width="100" height="20" uuid="a8d5dad0-4c7a-4326-9490-d256931c1c36"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAIROBI, KENYA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="7" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="206" y="0" width="138" height="22" uuid="62a79540-81b1-4517-a43a-3ee128597874"/>
+				<textElement>
+					<font fontName="Stencil Std" size="18"/>
+				</textElement>
+				<text><![CDATA[CASE DETAILS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="42" width="555" height="1" uuid="7028c84f-0371-483d-98d8-835bf1c69e09"/>
+			</line>
+			<textField pattern="EEE, d MMM yyyy HH:mm:ss Z">
+				<reportElement x="411" y="22" width="131" height="20" uuid="ca78109d-09ca-427c-9ebf-edb8a83f66f8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="382" splitType="Stretch">
+			<textField>
+				<reportElement x="140" y="16" width="128" height="20" uuid="16135918-ce88-44b3-9b28-dbd33e7797ba"/>
+				<textFieldExpression><![CDATA[$F{OBno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="54" width="128" height="20" uuid="205268df-c7e6-46b5-93e6-b3ca186495ff"/>
+				<textFieldExpression><![CDATA[$F{crime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="16" width="128" height="20" uuid="44c60e22-2bf9-4699-9925-acb259c5e51c"/>
+				<textFieldExpression><![CDATA[$F{victim_fname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="94" width="128" height="20" uuid="f018fb73-b375-41c4-95b3-755ad4677132"/>
+				<textFieldExpression><![CDATA[$F{victim_idno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="16" width="100" height="20" uuid="5c355e8a-8024-4eec-906b-6fa89165f49e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[OB Number:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="54" width="100" height="20" uuid="29fe5d63-5f62-422c-9eb9-9e3cfa32abae"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Crime:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="294" y="16" width="100" height="20" uuid="4fa434b8-ed8e-42cc-a996-469dbb9ce80c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Victim Names:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="294" y="94" width="100" height="20" uuid="038d68ae-955a-4ad8-bac3-a1440a3cdffd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Victim ID No.:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="411" y="129" width="128" height="20" uuid="9fda08ca-24ae-41a3-aafc-717d61ceba0b"/>
+				<textFieldExpression><![CDATA[$F{victim_contacts}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="294" y="129" width="100" height="20" uuid="0601d02f-3e02-4756-bdee-7e6f61acbb1f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Victim Address:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="129" width="128" height="20" uuid="0432f8ca-377c-4138-a01b-780e3e84717e"/>
+				<textFieldExpression><![CDATA[$F{scene_of_crime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="129" width="100" height="20" uuid="40b5f866-d8da-469a-850c-73578f01e788"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Scene of Crime:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="163" width="128" height="20" uuid="5ac82d98-a02f-49fb-8d10-701caba43de2"/>
+				<textFieldExpression><![CDATA[$F{time_of_crime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="163" width="100" height="20" uuid="678e5ec5-f5bc-46c7-bfc9-be0222246428"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Time of Crime:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="234" width="399" height="20" uuid="cdfcc5d0-f4ab-41d0-bf0f-c35756805564"/>
+				<textFieldExpression><![CDATA[$F{witnesses}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="234" width="100" height="20" uuid="6d188724-1e30-4aa7-8229-9be98b14034e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Witnesses:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="199" width="399" height="20" uuid="649dbaa3-7987-44db-8a8a-30bd2c9051fe"/>
+				<textFieldExpression><![CDATA[$F{incident_description}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="199" width="110" height="20" uuid="be72296b-ae84-432a-aa73-d8e16445e7b9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Incident Description:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="266" width="359" height="20" uuid="ba49980b-ae98-48c4-aa2c-a3c53e4aa98f"/>
+				<textFieldExpression><![CDATA[$F{perpetrator_description}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="266" width="126" height="20" uuid="19571c9a-d66b-4a3a-b861-0e3ccbf3906d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Perpetrator Description:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="298" width="359" height="20" uuid="f3338524-0750-4bbc-8cf7-74af6df4f1c7"/>
+				<textFieldExpression><![CDATA[$F{surrounding_description}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="298" width="126" height="20" uuid="687d3b07-e6ec-4e0d-a75d-9832dcb52c75"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Surrounding Description:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="336" width="399" height="20" uuid="36e90f17-5427-4c67-a5b7-6f068ef1caa3"/>
+				<textFieldExpression><![CDATA[$F{suspects}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="336" width="100" height="20" uuid="35f827c0-0919-4fc1-b850-bd08abc990ff"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suspect(s):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="362" width="399" height="20" uuid="50836a14-5a9b-43cb-8cf4-7438004f00f2"/>
+				<textFieldExpression><![CDATA[$F{other_related_info}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="362" width="100" height="20" uuid="314f82e5-e3bb-4448-a38a-554384aec8b8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Related Info:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="94" width="128" height="20" uuid="2ecbeaf8-197f-4bc4-87be-5840cebd4ede"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="94" width="110" height="20" uuid="1f02a2fa-686a-479e-994b-3048bcc72c34"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Crime Reported:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="411" y="163" width="128" height="20" uuid="353f07a2-77c4-46d9-8287-f64c9baa3f70"/>
+				<textFieldExpression><![CDATA[$F{victim_cellphone_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="294" y="163" width="117" height="20" uuid="de872025-5ef1-41e7-a2eb-724455f2fda1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Victim Cellphone No.:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="411" y="54" width="128" height="20" uuid="3c841d82-56bf-4543-b71d-9829db6deff1"/>
+				<textFieldExpression><![CDATA[$F{victim_gender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="294" y="54" width="100" height="20" uuid="ea5b5f1b-ad8b-4523-83b8-12a95cac9368"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Victim Gender:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="44" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="431" y="15" width="80" height="20" uuid="509523e6-d433-4c50-a910-ddc0eb42ea28"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="15" width="40" height="20" uuid="f87071ec-0e0e-428d-92db-8bdd20898098"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="5" splitType="Stretch"/>
+	</summary>
+</jasperReport>
